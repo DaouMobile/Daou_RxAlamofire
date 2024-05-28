@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name = "RxAlamofire"
   # Version to always follow latest tag, with fallback to major
-  s.version = "6.1.0"
+  s.version = "6.1.3"
   s.license = "MIT"
   s.summary = "RxSwift wrapper around the elegant HTTP networking in Swift Alamofire"
   s.homepage = "https://github.com/RxSwiftCommunity/RxAlamofire"
   s.authors = { "RxSwift Community" => "community@rxswift.org" }
-  s.source = { :git => "https://github.com/RxSwiftCommunity/RxAlamofire.git", :tag => "v" + ENV['RELEASE_VERSION'] }
+  s.source = { :git => "https://github.com/DaouMobile/Daou_RxAlamofire", :tag => "v" + ENV['RELEASE_VERSION'] }
   s.swift_version = "5.1"
 
   s.ios.deployment_target = "10.0"
