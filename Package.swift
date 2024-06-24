@@ -19,7 +19,6 @@ let package = Package(name: "RxAlamofire",
                         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0")),
                         .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", .upToNextMajor(from: "9.1.0"))
                       ],
-
                       targets: [
                         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
                         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
@@ -30,7 +29,7 @@ let package = Package(name: "RxAlamofire",
                                   .product(name: "RxCocoa", package: "RxSwift")
                                 ],
                                 path: "Sources",
-                                resources: [.process("Resources/PrivacyInfo.xcprivacy")]),
+                                resources: [.process("./Resources/PrivacyInfo.xcprivacy")]),
                         .testTarget(name: "RxAlamofireTests",
                                     dependencies: [
                                       .byName(name: "RxAlamofire"),
