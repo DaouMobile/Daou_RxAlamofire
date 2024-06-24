@@ -29,7 +29,7 @@ let package = Package(name: "RxAlamofire",
                                   .product(name: "RxCocoa", package: "RxSwift")
                                 ],
                                 path: "Sources",
-                                resources: [.process("./Resources/PrivacyInfo.xcprivacy")]),
+                                resources: [.process("../Resources/PrivacyInfo.xcprivacy")]),
                         .testTarget(name: "RxAlamofireTests",
                                     dependencies: [
                                       .byName(name: "RxAlamofire"),
